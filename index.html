@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számologép</title>
+    <link rel="stylesheet" href="math.css">
+</head>
+<body bgcolor="gray">
+    <h1>számológép</h1>
+        <fieldset class="hatter">
+            <form action="javascript:oa()">
+            <legend>számológép</legend>
+        <input type="number" id="a" placeholder="Number 1">
+        <br>
+        <input type="number" id="b" placeholder="Number 2">
+        <br>
+        <br>
+        <input type="text" id="c" placeholder="eredmény">
+        <br>
+        <button type="submit" value="+">+</button>
+        </form>
+        
+        <form action="javascript:kv()">
+        <button type="submit" value="-">-</button>
+        </form>
+
+        <form action="javascript:sr()">
+            <button type="submit" value="*">X</button>
+            </form>
+
+        <form action="javascript:ot()">
+            <button type="submit" value="/">:</button>
+            </form>
+
+        </fieldset>
+
+    <hr>
+
+        <fieldset class="hatter">
+            <form action="javascript:nt()">
+                <legend>négyzet területe, kerülete</legend>
+        <input type="number" id="d" placeholder="A">
+            <br>
+        <input type="text" id="e" placeholder="terület">
+        <button type="submit" value="*">Terület számitás</button>
+            </form>
+
+            <form action="javascript:nk()">
+        <input type="text" id="f" placeholder="kerület">
+        <button type="submit" value="*">Kerület számitás</button>
+            </form>
+
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="hatter">
+            <form action="javascript:kt()">
+                <legend>kör területe,kerülete</legend>
+                <input type="number" id="g" placeholder="r">
+                <br>
+                <input type="text" id="h" placeholder="terület">
+                <button type="submit" value="*">terület számitás</button>
+            </form>
+
+            <form action="javascript:kk()">
+                <input type="text" id="i" placeholder="kerület">
+                <button type="submit" value="*">kerület számitás</button>
+            </form>
+        </fieldset>
+        <hr>
+        <fieldset class="hatter">
+            <form action="javascript:tt()">
+                <legend>téglalap területe,kerülete</legend>
+                <input type="number" id="j" placeholder="a">
+                <br>
+                <input type="number" id="k" placeholder="b">
+                <br>
+                <input type="text" id="t" placeholder="terület">
+                <button type="submit" value="*">terület számitás</button>
+            </form>
+
+            <form action="javascript:tk()">
+                <input type="text" id="l" placeholder="kerület">
+                <button type="submit" value="*">kerület számitás</button>
+            </form>
+
+        </fieldset>
+
+    <script>
+        function oa() {
+        c.value = Number(a.value) + Number(b.value)
+        }
+        function kv() {
+        c.value = Number(a.value) - Number(b.value)
+        }
+        function sr() {
+        c.value = Number(a.value) * Number(b.value)
+        }
+        function ot() {
+        c.value = Number(a.value) / Number(b.value)
+        }
+        function nt() {
+        e.value = Number(d.value) * Number(d.value)
+        }
+        function nk() {
+        f.value = (4) * Number(d.value)
+        }
+        function kt() {
+        h.value = Number(g.value) * Number(g.value) * (3.14159)
+        }
+        function kk() {
+        i.value = (2) * Number(g.value) * (3.14159)
+        }
+        function tt() {
+        t.value = Number(j.value) * Number(k.value)
+        }
+        function tk() {
+        l.value = (2) * (Number(j.value) * Number(k.value))
+        }
+    </script>
+
+
+
+</body>
+</html
